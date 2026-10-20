@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.HideComments" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">@color/miui_blue</item>
+        <item name="colorOnPrimary">#FFFFFFFF</item>
+        <item name="colorPrimaryContainer">#FF1C3557</item>
+        <item name="colorOnPrimaryContainer">#FFCFE0FF</item>
+
+        <item name="colorSecondary">@color/miui_blue</item>
+        <item name="colorOnSecondary">#FFFFFFFF</item>
+        <item name="colorSecondaryContainer">#FF1C3557</item>
+        <item name="colorOnSecondaryContainer">#FFCFE0FF</item>
+
+        <item name="colorSurface">@color/miui_surface_dark</item>
+        <item name="colorOnSurface">@color/miui_on_surface_dark</item>
+        <item name="colorSurfaceVariant">#FF26272B</item>
+        <item name="colorOnSurfaceVariant">@color/miui_on_surface_variant_dark</item>
+        <item name="colorOutline">@color/miui_outline_dark</item>
+        <item name="colorOutlineVariant">@color/miui_outline_dark</item>
+
+        <item name="android:colorBackground">@color/miui_bg_dark</item>
+        <item name="colorSurfaceContainer">@color/miui_surface_dark</item>
+        <item name="colorSurfaceContainerLow">@color/miui_surface_dark</item>
+        <item name="colorSurfaceContainerLowest">#FF16171A</item>
+        <item name="colorSurfaceContainerHigh">#FF242529</item>
+        <item name="colorSurfaceContainerHighest">#FF2A2B2F</item>
+
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+    </style>
+
+</resources>

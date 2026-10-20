@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:name=".HideCommentsApp"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:description="@string/xposed_description"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HideComments">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false"
+            android:label="@string/more_settings"
+            android:parentActivityName=".MainActivity" />
+
+        <!--
+          框架通过这个 ContentProvider 反向找到设置 App，从而建立 XposedService 通道。
+          少了这一行，模块能注入但设置改不动。
+        -->
+        <provider
+            android:name="io.github.libxposed.service.XposedProvider"
+            android:authorities="${applicationId}.XposedService"
+            android:enabled="true"
+            android:exported="true"
+            android:multiprocess="false" />
+
+    </application>
+
+</manifest>

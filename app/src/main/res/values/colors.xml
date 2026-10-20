@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- MIUI / HyperOS 的标志性蓝 -->
+    <color name="miui_blue">#FF3482FF</color>
+    <color name="miui_blue_light">#FFE7F0FF</color>
+    <color name="miui_blue_dark">#FF1A4C8B</color>
+
+    <color name="miui_bg_light">#FFF5F5F7</color>
+    <color name="miui_surface_light">#FFFFFFFF</color>
+    <color name="miui_on_surface_light">#FF1C1C1E</color>
+    <color name="miui_on_surface_variant_light">#FF8A8A8E</color>
+    <color name="miui_outline_light">#FFE5E5EA</color>
+
+    <color name="miui_bg_dark">#FF111214</color>
+    <color name="miui_surface_dark">#FF1E1F22</color>
+    <color name="miui_on_surface_dark">#FFEDEDED</color>
+    <color name="miui_on_surface_variant_dark">#FF8A8A8E</color>
+    <color name="miui_outline_dark">#FF2A2B2E</color>
+</resources>

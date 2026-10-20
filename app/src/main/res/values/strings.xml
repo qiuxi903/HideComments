@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">干掉评论区</string>
+    <string name="xposed_description">屏蔽短视频与长视频 App 的评论区：入口按钮不显示，评论区也打不开。支持抖音、快手、哔哩哔哩及其国际版 / 极速版 / HD 版。</string>
+
+    <string name="switch_master">启用屏蔽</string>
+    <string name="switch_master_desc">屏蔽已授权 App 的评论区</string>
+
+    <string name="section_apps">目标应用</string>
+    <string name="section_what">屏蔽内容</string>
+    <string name="section_strength">识别强度</string>
+    <string name="section_advanced">高级</string>
+    <string name="section_framework">框架状态</string>
+    <string name="section_paths">日志与 View 树</string>
+
+    <string name="more_settings">更多设置</string>
+    <string name="more_settings_desc">屏蔽内容、识别强度、日志路径</string>
+
+    <string name="switch_entry">隐藏评论区入口按钮</string>
+    <string name="switch_panel">隐藏评论区面板</string>
+    <string name="switch_navigation">拦截跳转到评论页</string>
+
+    <string name="strength_gentle">保守</string>
+    <string name="strength_balanced">标准</string>
+    <string name="strength_aggressive">激进</string>
+
+    <string name="switch_verbose">详细日志</string>
+    <string name="switch_dump">导出 View 树</string>
+
+    <string name="paths_show">显示路径</string>
+    <string name="paths_hide">收起路径</string>
+
+    <string name="app_allow">本次放行</string>
+    <string name="app_restore">恢复屏蔽</string>
+
+    <string name="status_not_connected">未连接到 Xposed 框架 · 请在管理器里勾选本模块</string>
+    <string name="status_ok">%1$s · API %2$d · 已授权 %3$d/%4$d</string>
+    <string name="save_failed">保存失败：未连接到 Xposed 框架</string>
+</resources>

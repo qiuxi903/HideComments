@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  MIUI 风格的组内分隔线：左缩进对齐文字起点，线很淡。
+  这是 MIUI 设置页最标志性的排版细节之一。
+-->
+<View xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:layout_marginStart="18dp"
+    android:background="?attr/colorOutlineVariant" />

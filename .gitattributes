@@ -1,0 +1,20 @@
+# 文本文件统一以 LF 存入仓库，工作区也保持 LF。
+#
+# 为什么不用 core.autocrlf：它在 Windows 上默认是 true，会把 LF 写成 CRLF。
+# 而 gradlew 是 shell 脚本，一旦被写成 CRLF，在 Linux / macOS 上会直接报
+# `bad interpreter: /bin/sh^M`，整个 wrapper 就废了。放在 .gitattributes 里
+# 才能保证每个人的 checkout 结果都一样，不受各自 Git 配置影响。
+* text=auto eol=lf
+
+# Windows 批处理保持 CRLF —— cmd.exe 解析 LF-only 批处理在个别分支下会出怪问题。
+*.bat text eol=crlf
+
+# Gradle Wrapper 的 shell 脚本必须是 LF。
+gradlew text eol=lf
+
+# 二进制文件不做任何转换。
+*.jar binary
+*.apk binary
+*.aab binary
+*.jks binary
+*.keystore binary

@@ -1,0 +1,26 @@
+[versions]
+agp = "8.7.3"
+# MiuiX 0.9.4 是用 Kotlin 2.4.21 编译的，元数据版本比 2.2 新，
+# 编译器读不了就会报 "Module was compiled with an incompatible version of Kotlin"。
+kotlin = "2.4.21"
+# libxposed 102.0.0 要求 compileSdk 37，而 android-37 目前只在预览通道、
+# 公用 SDK 仓库里下不到。因此钉在 101：api 101.0.1 + service 101.0.0 只要求 compileSdk 36
+# （稳定版），且在 Vector 2.1/2.2 上行为一致。代价是失去 API 102 才有的
+# setId / detach / 热重载，对本项目没有实质影响。
+libxposedApi = "101.0.1"
+libxposedService = "101.0.0"
+androidxCore = "1.13.1"
+appcompat = "1.7.0"
+material = "1.12.0"
+
+[libraries]
+libxposed-api = { module = "io.github.libxposed:api", version.ref = "libxposedApi" }
+libxposed-service = { module = "io.github.libxposed:service", version.ref = "libxposedService" }
+androidx-core-ktx = { module = "androidx.core:core-ktx", version.ref = "androidxCore" }
+androidx-appcompat = { module = "androidx.appcompat:appcompat", version.ref = "appcompat" }
+material = { module = "com.google.android.material:material", version.ref = "material" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+android-library = { id = "com.android.library", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
