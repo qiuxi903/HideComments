@@ -19,14 +19,17 @@ val keystoreProperties = Properties().apply {
 }
 
 android {
-    namespace = "com.hidecomments.app"
+    namespace = "io.github.qiuxi903.hidecomments.app"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.hidecomments"
+        applicationId = "io.github.qiuxi903.hidecomments"
         minSdk = 26
         targetSdk = 34
-        versionCode = 1
+        // versionCode 用日期号（YYYYMMDD），是 Xposed 生态的通行做法：
+        // LSPosed 管理器靠它判断有没有新版本，日期号保证同一天多次发布也能正确递增，
+        // 索引仓库的 Release tag 格式也是 <versionCode>-<versionName>。
+        versionCode = 20261020
         versionName = "1.0.0"
     }
 

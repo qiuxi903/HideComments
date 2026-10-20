@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.hidecomments.hook"
+    namespace = "io.github.qiuxi903.hidecomments.hook"
     compileSdk = 36
 
     defaultConfig {

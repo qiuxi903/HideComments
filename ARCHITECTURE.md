@@ -14,7 +14,7 @@
 |---|---|
 | 中文名 | 干掉评论区 |
 | 英文名 | HideComments |
-| 应用 ID | `com.hidecomments` |
+| 应用 ID | `io.github.qiuxi903.hidecomments` |
 | 模块类型 | LSPosed / Vector（Xposed）模块 |
 | 实现语言 | Kotlin |
 | 最低系统 | Android 8.0（API 26） |

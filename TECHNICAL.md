@@ -940,7 +940,7 @@ fun loadOrNull(): HideConfig? {
 | 5 | `Module was compiled with an incompatible version of Kotlin` | 库用 Kotlin 2.2 编译，工程用 2.0 | Kotlin 抬到 2.4.21 |
 | 6 | `jvmTarget: String` 变成错误 | Kotlin 2.4 废除了 `kotlinOptions` | 改 `kotlin { compilerOptions { ... } }` |
 | 7 | 插件下载 TLS 握手失败 | `repo.maven.apache.org` 偶发 | 阿里云镜像放最前 |
-| 8 | `Unresolved reference 'databinding'` | Binding 类按 namespace 生成 | `com.hidecomments.app.databinding` |
+| 8 | `Unresolved reference 'databinding'` | Binding 类按 namespace 生成 | `io.github.qiuxi903.hidecomments.app.databinding` |
 
 ### 9.2 运行时崩溃
 
